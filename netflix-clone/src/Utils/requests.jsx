@@ -1,7 +1,4 @@
 let API_KEY=import.meta.env.VITE_API_KEY
-// const TMDB_TOKEN =process.env.REACT_APP_TMDB_TOKEN
-0
-
 
 const requests = {
      fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
