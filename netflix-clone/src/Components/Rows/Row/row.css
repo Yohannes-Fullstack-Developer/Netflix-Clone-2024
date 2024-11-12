@@ -27,3 +27,9 @@
   margin-left: 20px;
   color: white;
 }
+
+@median (max-width:538px){
+  .row (
+     display: none
+  )
+}

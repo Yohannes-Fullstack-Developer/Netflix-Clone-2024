@@ -1,0 +1,175 @@
+
+
+First create components in SRC:
+
+To grap googlefont search: https://fonts.google.com/ 
+
+Note: 
+Matderial Icone Link : npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+
+https://mui.com/material-ui/material-icons/
+
+Search Icone:           import SearchIcon from '@mui/icons-material/Search';
+NotificationNoneIcone:   import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+AccountBoxIcon:         import AccountBoxIcon from '@mui/icons-material/AccountBox';
+ArrowDownIcon:         import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
+
+FaceBookIcone: import FacebookIcon from '@mui/icons-material/Facebook';
+YoutubeIcone: import YouTubeIcon from '@mui/icons-material/YouTube';
+InstegramIcone: import InstagramIcon from '@mui/icons-material/Instagram';
+
+Note:
+check right path by ls
+git add .
+git commit -m "any message"
+git push
+
+Note:
+To find the any movie from the movie Database so go to google 
+A link: https://www.themoviedb.org/?language=en-US
+
+
+First generate APi Key from movie database:
+Api key : 6144f7b9785b300754d325fb666f4389
+          
+
+So to get data you need to go API refernce
+
+This URL base : https://api.themoviedb.org/3/discover/tv?api_key=6144f7b9785b300754d325fb666f4389&with_networks=213  this retrun as like json format 
+
+${API_KEY} this is templete litral replace by api-key
+
+To grap the Generus vidio we need to go to Geners title
+
+'https://api.themoviedb.org/3/genre/movie/list?language=en'
+
+
+First Install: axios to use fetch data 
+
+To Hiden API key then create .env file so to create .env file in side of gitignore file 
+SO  WE don't want track .env so we go to .gitignore file type .env file
+
+
+
+{
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action"
+    },
+    {
+      "id": 12,
+      "name": "Adventure"
+    },
+    {
+      "id": 35,
+      "name": "Comedy"
+    },
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 99,
+      "name": "Documentary"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 10751,
+      "name": "Family"
+    },
+    {
+      "id": 14,
+      "name": "Fantasy"
+    },
+    {
+      "id": 36,
+      "name": "History"
+    },
+    {
+      "id": 27,
+      "name": "Horror"
+    },
+    {
+      "id": 10402,
+      "name": "Music"
+    },
+    {
+      "id": 9648,
+      "name": "Mystery"
+    },
+    {
+      "id": 10749,
+      "name": "Romance"
+    },
+    {
+      "id": 878,
+      "name": "Science Fiction"
+    },
+    {
+      "id": 10770,
+      "name": "TV Movie"
+    },
+    {
+      "id": 53,
+      "name": "Thriller"
+    },
+    {
+      "id": 10752,
+      "name": "War"
+    },
+    {
+      "id": 37,
+      "name": "Western"
+    }
+  ]
+}
+
+https://api.themoviedb.org/3/96222cacd18bc4f9f65d943049757f01/genre/movie/list?language=en';
+
+https://api.themoviedb.org/3/genre/movie/list
+
+
+const url = 'https://api.themoviedb.org/3/genre/movie/list?language=en';
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer 6144f7b9785b300754d325fb666f4389'
+  }
+};
+
+fetch(url, options)
+  .then(res => res.json())
+  .then(json => console.log(json))
+  .catch(err => console.error(err));
+
+  ==========================
+  **************************
+  Axios is a popular JavaScript library used to make HTTP requests from your React application. It allows you to easily communicate with APIs or backend servers, sending and receiving data.
+
+ Poster_path : ekZobS8isE6mA53RAiGDG93hBxL.jpg
+
+ ==================================
+ =================================
+
+To Deploy a Project into  Github Repositor
+1. install : npm i gh-pages --save-dev
+2. we go to package.json file 
+  on top create homepage: url of github.github.io/project name 
+3. write on script after start: 1 predeploy: npm run bulid
+                                2. deploy:gh-pages -d build
+
+after this done: git add .
+                git commit -m "deploy"
+                git push
+Finally : npm run deploy
+
+
+
+if we see lE sign use this code.
+git config --global core.autocrlf true
