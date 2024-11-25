@@ -1,6 +1,5 @@
 .banner {
-  margin-top: -15vh;
-  /* height:vh; */
+  height:-10vh;
   margin-bottom: -80px;
   color: white;
   object-fit: contain;
@@ -8,19 +7,19 @@
 .banner__contents {
   margin-left: 60px;
   padding-top: 350px;
-  height: 230px;
+  height: 150px;
 }
 .banner__title {
   font-size: 1.2rem;
-  font-weight: 450;
+  font-weight: 350;
   padding-bottom: 0.5rem;
 }
 .banner__description {
   width: 45rem;
   line-height: 1;
-  padding: 1rem 0;
+  padding: 0.3rem 0;
   font-size: 1rem;
-  max-width: 360px;
+  max-width: 500px;
   height: 80px;
 }
 .banner__button {
