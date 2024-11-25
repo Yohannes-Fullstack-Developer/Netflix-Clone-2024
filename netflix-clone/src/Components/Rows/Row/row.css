@@ -27,9 +27,9 @@
   margin-left: 20px;
   color: white;
 }
-
-@median (max-width:538px){
+/* 
+@median (max-width:768px){
   .row (
-     display: none
+     display: none;
   )
-}
+} */
